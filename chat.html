@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example of using all HTML elements">
+    <title>HTML Elements Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        header, footer { background-color: #f4f4f4; padding: 10px; text-align: center; }
+        section { margin: 20px 0; }
+        nav a { margin: 0 10px; text-decoration: none; color: #333; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the HTML Elements Showcase</h1>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#form">Form Example</a>
+            <a href="#table">Table</a>
+            <a href="#media">Media</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>HTML stands for <abbr title="HyperText Markup Language">HTML</abbr>, the standard language for creating web pages.</p>
+            <blockquote cite="https://www.w3.org/TR/html52/">
+                "HTML is the foundation of web development."
+            </blockquote>
+            <p>Here is an inline example: The chemical formula of water is <sub>H</sub><sub>2</sub>O, and E = mc<sup>2</sup> is Einstein's equation.</p>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;HTML Example&lt;/title&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+
+        <section id="form">
+            <h2>Form Example</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="table">
+            <h2>Table</h2>
+            <table border="1">
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple</td>
+                        <td>10</td>
+                        <td>$1</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>5</td>
+                        <td>$0.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="media">
+            <h2>Media</h2>
+            <figure>
+                <img src="example.jpg" alt="Example Image" width="300">
+                <figcaption>Figure 1: An example image</figcaption>
+            </figure>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls width="300">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Showcase</p>
+        <address>Contact us at <a href="mailto:info@example.com">info@example.com</a>.</address>
+    </footer>
+</body>
+</html>
